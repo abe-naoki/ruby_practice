@@ -16,19 +16,17 @@
 ```
   rubyのバージョン確認  
   rbenv install -l
-```
 
-## rubyのインストール
-```
+  rbenvにてインストール  
   rbenv install 2.3.1
-```
 
   rbenvの切替え  
   rbenv global 2.3.1
+```
 
 ## gemのインストール
 ```
-  gem install rbenv-rehash
+  ~~gem install rbenv-rehash~~ ← rbenv本体に組み込まれたので不要
   
   gem install bundler
   
