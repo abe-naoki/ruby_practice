@@ -26,8 +26,7 @@
 
 ## gemのインストール
 ```
-  ~~"gem install rbenv-rehash"~~
-  ← rbenv本体に組み込まれたので不要
+  //gem install rbenv-rehash ← ※最新のrbenv本体には組み込まれたので不要
   
   gem install bundler
   
