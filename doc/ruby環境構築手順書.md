@@ -14,7 +14,7 @@
 
 ## Rubyのインストール
 ```
-  rubyのバージョン確認  
+  Rubyのバージョン確認  
   rbenv install -l
 
   rbenvにてインストール  
@@ -26,7 +26,7 @@
 
 ## gemのインストール
 ```
-  ~~gem install rbenv-rehash~~ ← rbenv本体に組み込まれたので不要
+  ~~gem~~ ~~install~~ ~~rbenv-rehash~~ ← rbenv本体に組み込まれたので不要
   
   gem install bundler
   
