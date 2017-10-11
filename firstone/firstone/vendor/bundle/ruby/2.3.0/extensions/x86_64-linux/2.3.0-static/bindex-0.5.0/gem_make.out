@@ -1,0 +1,15 @@
+current directory: /home/abe/src/work/ruby_practice/firstone/firstone/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+/home/abe/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20171011-5604-ns8nvy.rb extconf.rb
+creating Makefile
+
+current directory: /home/abe/src/work/ruby_practice/firstone/firstone/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/abe/src/work/ruby_practice/firstone/firstone/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/abe/src/work/ruby_practice/firstone/firstone/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20171011-5604-zoja70/bindex
