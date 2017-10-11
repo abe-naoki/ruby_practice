@@ -1,22 +1,18 @@
 # Ruby環境構築手順書
 
-yumインストール
+## yumインストール
 ```
-  リポジトリ追加
-  yum install epel-release
-
-  nodejsとnpmをインストール
-  yum install nodejs npm --enablerepo=epel
-
-  npmで使うパッケージもあるのでc++を入れる
-  yum install gcc gcc-c++
+リポジトリ追加
+yum install epel-release
+nodejsとnpmをインストール
+yum install nodejs npm --enablerepo=epel
+npmで使うパッケージもあるのでc++を入れる
+yum install gcc gcc-c++
 ```
 
->Rubyのインストール
-
+## Rubyのインストール
   rubyのバージョン確認
   rbenv install -l
-
 
 ## rubyのインストール
   rbenv install 2.3.1
@@ -24,11 +20,12 @@ yumインストール
   rbenvの切替え
   rbenv global 2.3.1
 
-gemのインストール
-gem install rbenv-rehash
-gem install bundler
-gem install rails
-
+## gemのインストール
+```
+  gem install rbenv-rehash
+  gem install bundler
+  gem install rails
+```
 アプリケーション用のディレクトリを作成
 mkdir firstone
 移動
