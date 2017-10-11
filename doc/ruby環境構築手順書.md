@@ -2,11 +2,13 @@
 
 ## yumインストール
 ```
-リポジトリ追加
+**リポジトリ追加**
 yum install epel-release
-nodejsとnpmをインストール
+
+**nodejsとnpmをインストール**
 yum install nodejs npm --enablerepo=epel
-npmで使うパッケージもあるのでc++を入れる
+
+**npmで使うパッケージもあるのでc++を入れる**
 yum install gcc gcc-c++
 ```
 
@@ -23,7 +25,9 @@ yum install gcc gcc-c++
 ## gemのインストール
 ```
   gem install rbenv-rehash
+  
   gem install bundler
+  
   gem install rails
 ```
 アプリケーション用のディレクトリを作成
