@@ -1,34 +1,47 @@
-# Ruby環境構築手順書（見出し1）
+# Ruby環境構築手順書
 
-* リスト
-  * リスト2
-* リスト3
+yumインストール
+```
+  リポジトリ追加
+  yum install epel-release
 
-0. *リスト*
-0. ddddd
-0. ｓｓｓｓｓ
-  0. ssssss（ブランク2つ）
- 0. sadasdfas（ブランク1つ）
-0. ssssss
+  nodejsとnpmをインストール
+  yum install nodejs npm --enablerepo=epel
 
-## テーブル
+  npmで使うパッケージもあるのでc++を入れる
+  yum install gcc gcc-c++
+```
 
-| Left align | Right align | Center align |
-|:-----------|------------:|:------------:|
-| This       |        This |     日本語もOK     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
+>Rubyのインストール
 
-## これでどうだ
+  rubyのバージョン確認
+  rbenv install -l
 
-どうだ
 
-> "引用引用引用引用
-引用引用"
->引用本文引用本文
->>入れ子
+## rubyのインストール
+  rbenv install 2.3.1
 
-~~打消し~~
+  rbenvの切替え
+  rbenv global 2.3.1
+
+gemのインストール
+gem install rbenv-rehash
+gem install bundler
+gem install rails
+
+アプリケーション用のディレクトリを作成
+mkdir firstone
+移動
+cd firstep
+
+railsのアプリケーションのテンプレート作成
+rails new アプリケーション名
+
+bundle install --path vendor/bundle
+
+サーバ起動
+bundle exec rails s
+
+
+ユーザ管理機能の一通りを作成するコマンド
+bundle exec rails g scaffold user name:string age:integer email:string address:string
