@@ -34,8 +34,6 @@ git status
 ## gitのpushを削除（ファイルは残したまま）
   git git rm --cached -r [ファイル名]
 
-
-
 ## 新規ブランチ作成までの手順
 ```
   Pull Request用ブランチを作成  
@@ -44,4 +42,11 @@ git status
   git commit -m "変更内容のコメント"  
   git push origin [ブランチ名] ← 基本的にリモートにする名前を入力する
 ```
-  
+
+# 作業終了後masterに変更内容をマージする
+```
+  git merge [ブランチ名]
+  git add .
+  git commit
+  git push
+```
