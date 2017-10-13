@@ -12,12 +12,11 @@ git checkout -b [ブランチ名] origin/[ブランチ名]
 ## gitの状態（差分等のあるファイル）確認
 git status
 
-## 変更内容をリモートリポジトリにpushするまでの流れ
-```
-  git add .  
-  git commit  
-  git push  
-```
+# gitの差分取得
+  git fetch
+  
+#gitの変更を一時的に退避
+  git stash ← （git add しておかないと使えない）
 
 ## ブランチを削除
   **※削除の際は対象のブランチにいないこと!!**
@@ -31,6 +30,13 @@ git status
   
 ## gitのpushを削除（ファイルは残したまま）
   git git rm --cached -r [ファイル名]
+
+## 変更内容をリモートリポジトリにpushするまでの流れ
+```
+  git add .  
+  git commit  
+  git push  
+```
 
 ## 新規ブランチ作成までの手順
 ```
@@ -48,12 +54,6 @@ git status
   git commit
   git push
 ```
-
-# gitの差分取得
-  git fetch
-  
-#gitの変更を一時的に退避
-  git stash ← （git add しておかないと使えない）
 
 # gitで衝突（コンフリクト）が起きた場合
 ```
