@@ -48,25 +48,25 @@
 
 ### enumのメソッド
   rails consoleでコンソールを開いて以下のコードを入力して確認  
-    ### statusをattackにする  
+    ##### statusをattackにする  
     battle = Battle.new(status: :attack)  
-    ### 現在のstatusを確認する  
+    ##### 現在のstatusを確認する  
     battle.status  
-    ### 現在のstatusがattackなのか確認する  
+    ##### 現在のstatusがattackなのか確認する  
     battle.attack?  
-    ### 現在のstatusがdefendなのか確認する  
+    ##### 現在のstatusがdefendなのか確認する  
     battle.defend?  
-    ### モデルで定義したハッシュの中身を確認する  
+    ##### モデルで定義したハッシュの中身を確認する  
     Battle.statuses  
-    ### ハッシュとして使う、アイテムに定義された整数値は？  
+    ##### ハッシュとして使う、アイテムに定義された整数値は？  
     Battle.statuses[:item]  
-    ### statusをspellsに変更する  
+    ##### statusをspellsに変更する  
     battle.spells!  
-    ### 現在のstatusを確認する  
+    ##### 現在のstatusを確認する  
     battle.status  
-    ### statusをitemに変更する  
+    ##### statusをitemに変更する  
     battle.item!  
-    ### 現在のstatusを確認する  
+    ##### 現在のstatusを確認する  
     battle.status  
 
   #### 実行結果
