@@ -4,7 +4,8 @@
   enumを使えば、数字を意味のある文字として扱えるので、便利です。
   
   要するに数字に対して文字を組み込んでいるようなイメージ。  
-  こうすることによって、コードを見ただけでどのような値か直感的にもわかりやすい。
+  こうすることによって、コードを見ただけでどのような値か直感的にもわかりやすい。（可読性向上↑↑）
+  また、整数値の範囲が決定されるので、誤った数値を使用することを防げる。
   
 
 # enumの使い方
@@ -30,8 +31,11 @@
     rake db:migrate  
 
   4.enumを定義  
-    enum status:{ attack: 0,spells:1,defend:2,item:3, abilities:4 }  
-    #attack=攻撃、spells=魔法、defend=防御、item=アイテム、abilities=特技
+    vi app/models/battle.rb
+    -------------------------------------------------------------
+      enum status:{ attack: 0,spells:1,defend:2,item:3, abilities:4 }  
+      #attack=攻撃、spells=魔法、defend=防御、item=アイテム、abilities=特技
+    -------------------------------------------------------------
   
   5.コントローラーとビューの作成  
     rails g controller Battle test
@@ -44,30 +48,40 @@
       <%= select :status,:name,Battle.statuses.values.to_a %>  
     -------------------------------------------------------------
     ※モデルで定義したenumはビューでも使うことができる！
+    
+  7.サーバ起動
+    bundle exec rails s
+    
+  8.ルーティングを確認してビューを表示
+    ルーティングの確認
+    vi config/route.rb
+    
+    ビューにアクセス
+    "http://localhost:3000/battle/test"
 ```
 
 ### enumのメソッド
   rails consoleでコンソールを開いて以下のコードを入力して確認
 
-    ##### statusをattackにする
+    # statusをattackにする
     battle = Battle.new(status: :attack)  
-    ##### 現在のstatusを確認する
+    # 現在のstatusを確認する
     battle.status  
-    ##### 現在のstatusがattackなのか確認する  
+    # 現在のstatusがattackなのか確認する  
     battle.attack?  
-    ##### 現在のstatusがdefendなのか確認する  
+    # 現在のstatusがdefendなのか確認する  
     battle.defend?  
-    ##### モデルで定義したハッシュの中身を確認する  
+    # モデルで定義したハッシュの中身を確認する  
     Battle.statuses  
-    ##### ハッシュとして使う、アイテムに定義された整数値は？  
+    # ハッシュとして使う、アイテムに定義された整数値は？  
     Battle.statuses[:item]  
-    ##### statusをspellsに変更する  
+    # statusをspellsに変更する  
     battle.spells!  
-    ##### 現在のstatusを確認する  
+    # 現在のstatusを確認する  
     battle.status  
-    ##### statusをitemに変更する  
+    # statusをitemに変更する  
     battle.item!  
-    ##### 現在のstatusを確認する  
+    # 現在のstatusを確認する  
     battle.status  
 
   #### 実行結果
