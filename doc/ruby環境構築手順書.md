@@ -5,12 +5,23 @@
   リポジトリ追加  
   yum install epel-release
 
-  nodejsとnpmをインストール
+  nodejsとnpmをインストール  
   yum install nodejs npm --enablerepo=epel
 
-  npmで使うパッケージもあるのでc++を入れる
+  npmで使うパッケージもあるのでc++を入れる  
   yum install gcc gcc-c++
 ```
+  epel：  
+   ユーザーが手軽にLinuxを利用できるように、OSの動作に必要なライブラリーやソフトウェアなどをまとめたパッケージ  
+  node.js：  
+   Node.jsはサーバサイドJavaScript。ノンブロッキングI/Oとイベントループという二つのモデルにより、大量の処理に対応できる。  
+  npm（Node Packaged Modules(npm)）：  
+   Node.jsのライブラリやパッケージを管理することができるツール  
+  gcc：  
+   UNIX，Windowsなどで動作するフリー のコンパイラである。  
+  gcc-c++：  
+   gcc-c++パッケージをインストールすることでg++コンパイラを利用できます。  
+    →g++はGNU GCC (GNUコンパイラコレクション) の C++ コンパイラコマンド(C++コンパイラ)  
 
 ## 2.Rubyのインストール
 ```
@@ -33,16 +44,21 @@
   gem install rails
 ```
 ## 4.アプリケーション用のディレクトリを作成
+```
   mkdir [任意のディレクトリ名]  
   cd [作成したディレクトリ]
+```
 
 ## 5.railsのアプリケーションのテンプレート作成  
-  rails new アプリケーション名
+  rails new アプリケーション名  
+  ※プロジェクト毎にディレクトリを作る。
 
-を実施（PATHも指定）
-  bundle install --path vendor/bundle ← （vendor/bundlerというディレクトリにgemをインストールします。）  
+## 6.bundle installを実施（PATHも指定）
+```
+  bundle install --path vendor/bundle ← （vendor/bundler配下にgemをインストールします。）  
   ※bundlerにオプションを渡してgemを任意のディレクトリにインストールし、gemをRailsプロジェクト毎に管理する  
-    プロジェクトごとにrailsのバージョンが違うこともあるので、不具合を避けれる。  
+  ※プロジェクト毎にrailsのバージョンが違うことに対しての不具合を避けられる。  
+```
 
 ## 7.サーバ起動
   bundle exec rails s  
