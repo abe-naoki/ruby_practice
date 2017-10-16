@@ -16,6 +16,10 @@ class Ability
     can :manage, :all
   end
 
+  def public
+    can :manage, :all
+  end
+
 #  def initialize(user)
     # Define abilities for the passed in user here. For example:
     #
