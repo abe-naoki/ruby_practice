@@ -39,11 +39,14 @@
 ## 5.railsのアプリケーションのテンプレート作成  
   rails new アプリケーション名
 
-## 6.バンドルインストールを実施（PATHも指定）
-  bundle install --path vendor/bundle
+を実施（PATHも指定）
+  bundle install --path vendor/bundle ← （vendor/bundlerというディレクトリにgemをインストールします。）  
+  ※bundlerにオプションを渡してgemを任意のディレクトリにインストールし、gemをRailsプロジェクト毎に管理する  
+    プロジェクトごとにrailsのバージョンが違うこともあるので、不具合を避けれる。  
 
-## 7.サーバ起動  
-  bundle exec rails s
+## 7.サーバ起動
+  bundle exec rails s  
+  ※Railsに付随しているWEBrickをサーバとして起動
 
 ## 8.ユーザ管理機能の一通りを作成するコマンド  
   bundle exec rails g scaffold user name:string age:integer email:string address:string

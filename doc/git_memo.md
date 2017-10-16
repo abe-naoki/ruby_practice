@@ -31,6 +31,14 @@ git status
 ## gitのpushを削除（ファイルは残したまま）
   git rm --cached -r [ファイル名]
 
+## 新規ブランチ作成までの手順
+```
+  Pull Request用ブランチを作成  
+  git checkout -b sample1  
+  git add . ← （変更内容をaddする）  
+  git commit -m "変更内容のコメント"  
+  git push origin sample1 ← （基本的にリモートにする名前を入力する）
+```
 ## 変更内容をリモートリポジトリにpushするまでの流れ
 ```
   git add .  
@@ -38,18 +46,10 @@ git status
   git push  
 ```
 
-## 新規ブランチ作成までの手順
+## 作業終了後sample1をmasterにマージする
 ```
-  Pull Request用ブランチを作成  
-  git checkout -b [ブランチ名]  
-  git add . ← （変更内容をaddする）  
-  git commit -m "変更内容のコメント"  
-  git push origin [ブランチ名] ← （基本的にリモートにする名前を入力する）
-```
-
-# 作業終了後masterに変更内容をマージする
-```
-  git merge [マージ先のブランチ名] ←（マージするときはマージ元にいること！！）
+  git checkout master
+  git merge sample1 ←（マージしたい対象のブランチにいること！！）
   git add .
   git commit
   git push
