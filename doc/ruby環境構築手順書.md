@@ -33,9 +33,8 @@
   gem install rails
 ```
 ## 4.アプリケーション用のディレクトリを作成
-  mkdir firstone  
-移動  
-  cd firstep
+  mkdir [任意のディレクトリ名]  
+  cd [作成したディレクトリ]
 
 ## 5.railsのアプリケーションのテンプレート作成  
   rails new アプリケーション名

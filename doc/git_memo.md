@@ -29,7 +29,7 @@ git status
   git push --delete origin [ブランチ名]
   
 ## gitのpushを削除（ファイルは残したまま）
-  git git rm --cached -r [ファイル名]
+  git rm --cached -r [ファイル名]
 
 ## 変更内容をリモートリポジトリにpushするまでの流れ
 ```
@@ -42,7 +42,7 @@ git status
 ```
   Pull Request用ブランチを作成  
   git checkout -b [ブランチ名]  
-  git add . ←変更内容をaddする  
+  git add . ← （変更内容をaddする）  
   git commit -m "変更内容のコメント"  
   git push origin [ブランチ名] ← （基本的にリモートにする名前を入力する）
 ```
