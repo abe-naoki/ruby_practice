@@ -1,11 +1,11 @@
 # enumとは？
   enumは列挙型  
   列挙とは整数が割り当てられた文字を順番に出力していくことを意味します。  
-  enumを使えば、文字の配列に整数を順番に割り当てられます。  
-
   enumを使えば、数字を意味のある文字として扱えるので、便利です。
-
-
+  
+  要するに数字に対して文字を組み込んでいるようなイメージ。
+  こうすることによって、コードを見ただけでどのような値か直感的にわかりやすい。
+  
 
 # enumの使い方
   RailsでActive Recordのenumのカラムに対してselectタグを設置する手順
@@ -45,6 +45,45 @@
     -------------------------------------------------------------
     ※モデルで定義したenumはビューでも使うことができる！
 ```
+
+## enumのメソッド
+  rails consoleでコンソールを開いて以下のコードを入力して確認
+    ### statusをattackにする
+    battle = Battle.new(status: :attack)
+    ### 現在のstatusを確認する
+    battle.status
+    ### 現在のstatusがattackなのか確認する
+    battle.attack?
+    ### 現在のstatusがdefendなのか確認する
+    battle.defend? 
+    ### モデルで定義したハッシュの中身を確認する
+    Battle.statuses
+    ### ハッシュとして使う、アイテムに定義された整数値は？
+    Battle.statuses[:item]
+    ### statusをspellsに変更する
+    battle.spells!
+    ### 現在のstatusを確認する
+    battle.status
+    ### statusをitemに変更する
+    battle.item!
+    ### 現在のstatusを確認する
+    battle.status  
+
+  #### 実行結果
+  ```
+  
+  => #<Battle id: nil, status: "attack", created_at: nil, updated_at: nil>  
+  => “attack"  
+  => true  
+  => false  
+  => {"attack"=>0, "spells"=>1, "defend"=>2, "item"=>3, "abilities"=>4}  
+  => 3  
+  => true  
+  => “spells"  
+  => true  
+  => "item"  
+  ```
+
 # 【参考URL 】
 ・http://www.sejuku.net/blog/26369#enum
 
