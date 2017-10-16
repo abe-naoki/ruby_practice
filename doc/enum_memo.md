@@ -1,5 +1,5 @@
 # enumとは？
-  enumは列挙型  
+  enumは列挙型。  
   列挙とは整数が割り当てられた文字を順番に出力していくことを意味します。  
   enumを使えば、数字を意味のある文字として扱えるので、便利です。
   
@@ -47,7 +47,7 @@
 ```
 
 ### enumのメソッド
-  rails consoleでコンソールを開いて以下のコードを入力して確認
+  rails consoleでコンソールを開いて以下のコードを入力して確認  
     ### statusをattackにする  
     battle = Battle.new(status: :attack)  
     ### 現在のstatusを確認する  
