@@ -48,6 +48,7 @@
 
 ### enumのメソッド
   rails consoleでコンソールを開いて以下のコードを入力して確認  
+
     ##### statusをattackにする  
     battle = Battle.new(status: :attack)  
     ##### 現在のstatusを確認する  
