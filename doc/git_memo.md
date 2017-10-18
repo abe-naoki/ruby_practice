@@ -1,69 +1,67 @@
-#git‚É‚Â‚¢‚Ä
-## Git‚ÌŠî–{“I‚ÈƒRƒ}ƒ“ƒhƒƒ‚
-### Ž©•ª‚ÌƒAƒJƒEƒ“ƒg“à‚ÉŠù‘¶‚ÌƒŠƒ|ƒWƒgƒŠ‚Ì•¡»‚ðì¬
-git fork [ƒŠƒ|ƒWƒgƒŠURL]  ©i¦ŒÂl—p‚ÌƒŠƒ|ƒWƒgƒŠ‚É‚È‚éj
+#gitã«ã¤ã„ã¦
+## Gitã®åŸºæœ¬çš„ãªã‚³ãƒžãƒ³ãƒ‰ãƒ¡ãƒ¢
+### ãƒªãƒã‚¸ãƒˆãƒªã®ã‚³ãƒ”ãƒ¼
+git clone [ãƒªãƒã‚¸ãƒˆãƒªURL]
 
-### ƒŠƒ|ƒWƒgƒŠ‚ÌƒRƒs[
-git clone [ƒŠƒ|ƒWƒgƒŠURL]
+### ãƒ–ãƒ©ãƒ³ãƒã®ä½œæˆ
+git checkout -b [ãƒ–ãƒ©ãƒ³ãƒå] origin/[ãƒ–ãƒ©ãƒ³ãƒå]
 
-### ƒuƒ‰ƒ“ƒ`‚Ìì¬
-git checkout -b [ƒuƒ‰ƒ“ƒ`–¼] origin/[ƒuƒ‰ƒ“ƒ`–¼]
-
-## git‚Ìó‘Ôi·•ª“™‚Ì‚ ‚éƒtƒ@ƒCƒ‹jŠm”F
+### gitã®çŠ¶æ…‹ï¼ˆå·®åˆ†ç­‰ã®ã‚ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ï¼‰ç¢ºèª
 git status
 
-### git‚Ì·•ªŽæ“¾
+### gitã®å·®åˆ†å–å¾—
   git fetch
   
-### git‚Ì•ÏX‚ðˆêŽž“I‚É‘Þ”ð
-  git stash © igit add ‚µ‚Ä‚¨‚©‚È‚¢‚ÆŽg‚¦‚È‚¢j
+### gitã®å¤‰æ›´ã‚’ä¸€æ™‚çš„ã«é€€é¿
+  git stash â† ï¼ˆgit add ã—ã¦ãŠã‹ãªã„ã¨ä½¿ãˆãªã„ï¼‰
 
-### ƒuƒ‰ƒ“ƒ`‚ðíœ
-  **¦íœ‚ÌÛ‚Í‘ÎÛ‚Ìƒuƒ‰ƒ“ƒ`‚É‚¢‚È‚¢‚±‚Æ!!**  
-  git branch -d [ƒuƒ‰ƒ“ƒ`–¼]
+### ãƒ–ãƒ©ãƒ³ãƒã‚’å‰Šé™¤
+  **â€»å‰Šé™¤ã®éš›ã¯å¯¾è±¡ã®ãƒ–ãƒ©ãƒ³ãƒã«ã„ãªã„ã“ã¨!!**  
+  git branch -d [ãƒ–ãƒ©ãƒ³ãƒå]
 
-### ƒuƒ‰ƒ“ƒ`‚ðíœi¦ƒ}[ƒW‚µ‚½‚©‚Ç‚¤‚©–â‚í‚¸‚É‹­§íœj
-  git branch -D [ƒuƒ‰ƒ“ƒ`–¼]
+### ãƒ–ãƒ©ãƒ³ãƒã‚’å‰Šé™¤ï¼ˆâ€»ãƒžãƒ¼ã‚¸ã—ãŸã‹ã©ã†ã‹å•ã‚ãšã«å¼·åˆ¶å‰Šé™¤ï¼‰
+  git branch -D [ãƒ–ãƒ©ãƒ³ãƒå]
 
-### ƒŠƒ‚[ƒgƒuƒ‰ƒ“ƒ`‚Ìíœ
-  git push --delete origin [ƒuƒ‰ƒ“ƒ`–¼]
+### ãƒªãƒ¢ãƒ¼ãƒˆãƒ–ãƒ©ãƒ³ãƒã®å‰Šé™¤
+  git push --delete origin [ãƒ–ãƒ©ãƒ³ãƒå]
   
-### git‚Ìpush‚ðíœiƒtƒ@ƒCƒ‹‚ÍŽc‚µ‚½‚Ü‚Üj
-  git rm --cached -r [ƒtƒ@ƒCƒ‹–¼]
+### gitã®pushã‚’å‰Šé™¤ï¼ˆãƒ•ã‚¡ã‚¤ãƒ«ã¯æ®‹ã—ãŸã¾ã¾ï¼‰
+  git rm --cached -r [ãƒ•ã‚¡ã‚¤ãƒ«å]
 
-##ŽÀÛ‚Ìì‹ÆŽžƒƒ‚
-### V‹Kƒuƒ‰ƒ“ƒ`ì¬‚Ü‚Å‚ÌŽè‡
+##å®Ÿéš›ã«é‹ç”¨æ™‚ã®æ‰‹é †
+### æ–°è¦ãƒ–ãƒ©ãƒ³ãƒä½œæˆã¾ã§ã®æ‰‹é †
 ```
-  Pull Request—pƒuƒ‰ƒ“ƒ`‚ðì¬  
+  Pull Requestç”¨ãƒ–ãƒ©ãƒ³ãƒã‚’ä½œæˆ  
   git checkout -b sample1  
-  git add . © i•ÏX“à—e‚ðadd‚·‚éj  
-  git commit -m "•ÏX“à—e‚ÌƒRƒƒ“ƒg"  
-  git push origin sample1 © iŠî–{“I‚ÉƒŠƒ‚[ƒg‚É‚·‚é–¼‘O‚ð“ü—Í‚·‚éj
+  git add . â† ï¼ˆå¤‰æ›´å†…å®¹ã‚’addã™ã‚‹ï¼‰  
+  git commit -m "å¤‰æ›´å†…å®¹ã®ã‚³ãƒ¡ãƒ³ãƒˆ"  
+  git push origin sample1 â† ï¼ˆåŸºæœ¬çš„ã«ãƒªãƒ¢ãƒ¼ãƒˆã«ã™ã‚‹åå‰ã‚’å…¥åŠ›ã™ã‚‹ï¼‰
 ```
-### •ÏX“à—e‚ðƒŠƒ‚[ƒgƒŠƒ|ƒWƒgƒŠ‚Épush‚·‚é‚Ü‚Å‚Ì—¬‚ê
+
+### å¤‰æ›´å†…å®¹ã‚’ãƒªãƒ¢ãƒ¼ãƒˆãƒªãƒã‚¸ãƒˆãƒªã«pushã™ã‚‹ã¾ã§ã®æµã‚Œ
 ```
   git add .  
   git commit  
   git push  
 ```
 
-### ì‹ÆI—¹Œãsample1‚ðmaster‚Éƒ}[ƒW‚·‚é
+### ä½œæ¥­çµ‚äº†å¾Œsample1ã‚’masterã«ãƒžãƒ¼ã‚¸ã™ã‚‹
 ```
   git checkout master
-  git fetch © i•ÏX“à—e‚ðŽæ“¾j
-  git pull © iÅV‚ÉXV‚·‚éj
-  git merge sample1 ©iƒ}[ƒW‚µ‚½‚¢‘ÎÛ‚Ìƒuƒ‰ƒ“ƒ`‚É‚¢‚é‚±‚ÆIIj
+  git fetch â† ï¼ˆå¤‰æ›´å†…å®¹ã‚’å–å¾—ï¼‰
+  git pull â† ï¼ˆæœ€æ–°ã«æ›´æ–°ã™ã‚‹ï¼‰
+  git merge sample1 â†ï¼ˆãƒžãƒ¼ã‚¸ã—ãŸã„å¯¾è±¡ã®ãƒ–ãƒ©ãƒ³ãƒã«ã„ã‚‹ã“ã¨ï¼ï¼ï¼‰
   git add .
   git commit
   git push
 ```
 
-### git‚ÅÕ“ËiƒRƒ“ƒtƒŠƒNƒgj‚ª‹N‚«‚½ê‡
+### gitã§è¡çªï¼ˆã‚³ãƒ³ãƒ•ãƒªã‚¯ãƒˆï¼‰ãŒèµ·ããŸå ´åˆ
 ```
-  1.‚Ü‚¸ƒRƒ“ƒtƒŠƒNƒg‚µ‚½ƒtƒ@ƒCƒ‹‚ðC³iƒ}[ƒWj‚·‚é
-  2.git add [‘ÎÛƒtƒ@ƒCƒ‹]
+  1.ã¾ãšã‚³ãƒ³ãƒ•ãƒªã‚¯ãƒˆã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä¿®æ­£ï¼ˆãƒžãƒ¼ã‚¸ï¼‰ã™ã‚‹
+  2.git add [å¯¾è±¡ãƒ•ã‚¡ã‚¤ãƒ«]
   3.git commit
   4.git push
 ```
-### Push‚ª‚Å‚«‚È‚¢Žž
+### PushãŒã§ããªã„æ™‚
   git push --set-upstream origin develop
