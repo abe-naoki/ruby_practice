@@ -1,25 +1,63 @@
-# Git�̊�{�I�ȃR�}���h����
+# Gitの基本的なコマンドメモ
 
-##Git fork  
-Github�̃A�J�E���g�������Ă���ƁA�����̃A�J�E���g���Ɋ����̃��|�W�g���̕������쐬
+## リポジトリのコピー
+git clone [リポジトリURL]
 
-# ���|�W�g���̍쐬
+## ブランチの作成
+git checkout -b [ブランチ名] origin/[ブランチ名]
 
-#�u�����`�̍쐬
-git checkout -b [�u�����`��] origin/[�u�����`��]
+## gitの状態（差分等のあるファイル）確認
+git status
 
-# �N���[��
-git clone
+## gitの差分取得
+  git fetch
+  
+## gitの変更を一時的に退避
+  git stash ← （git add しておかないと使えない）
 
-# �ύX���e�������[�g���|�W�g����push����܂ł̗���
+## ブランチを削除
+  **※削除の際は対象のブランチにいないこと!!**  
+  git branch -d [ブランチ名]
+
+## ブランチを削除（※マージしたかどうか問わずに強制削除）
+  git branch -D [ブランチ名]
+
+## リモートブランチの削除
+  git push --delete origin [ブランチ名]
+  
+## gitのpushを削除（ファイルは残したまま）
+  git rm --cached -r [ファイル名]
+
+## 新規ブランチ作成までの手順
+```
+  Pull Request用ブランチを作成  
+  git checkout -b sample1  
+  git add . ← （変更内容をaddする）  
+  git commit -m "変更内容のコメント"  
+  git push origin sample1 ← （基本的にリモートにする名前を入力する）
+```
+## 変更内容をリモートリポジトリにpushするまでの流れ
 ```
   git add .  
   git commit  
   git push  
 ```
 
-# git�̏�ԁi�������̂���t�@�C���j�m�F
-git status
+## 作業終了後sample1をmasterにマージする
+```
+  git checkout master
+  git merge sample1 ←（マージしたい対象のブランチにいること！！）
+  git add .
+  git commit
+  git push
+```
 
-git��push���폜�i�t�@�C���͎c�����܂܁j
-git git rm --cached -r [�t�@�C����]
+# gitで衝突（コンフリクト）が起きた場合
+```
+  1.まずコンフリクトしたファイルを修正（マージ）する
+  2.git add [対象ファイル]
+  3.git commit
+  4.git push
+```
+## Pushができない時
+  git push --set-upstream origin develop
