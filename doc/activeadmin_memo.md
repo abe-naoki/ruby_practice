@@ -17,13 +17,18 @@ inherited_resources:
       class ProjectsController < InheritedResources::Base  
       end  
 ```
+
     または  
+
 ```
       class ProjectsController < ApplicationController  
         inherit_resources  
       end  
 ```
 ## 2.bundle install
+```
+  bundle install
+```
 
 ## 3.ジェネレートコマンドでインストーラを実行！
 ```
@@ -46,7 +51,9 @@ inherited_resources:
 ```
 
 ## 5.動作確認
+```
   bundle exec rails s
-  
+```
+
 # 参考サイトURL
 https://qiita.com/haneri/items/d9d8d2dfa239a7f2461d
