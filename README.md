@@ -6,3 +6,7 @@ docの目次
   - [ruby環境構築手順](doc/ruby環境構築手順書.md)
 - enumについて
   - [enumとは](doc/enum_memo.md)
+- ActiveAdminについて
+  - [activeadmin](doc/activeadmin_memo.md)
+- いろいろなgemついてのメモ
+  - [いろいろなgemメモ.md](doc/いろいろなgemメモ.md)
