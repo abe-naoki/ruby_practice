@@ -13,6 +13,9 @@ inherited_resources:
   これが Gemfile に含まれていて、対象のコントローラーが inherit_resourcesを有効にしている場合、  
   デフォルトの index, new, edit, show, create, update, destroy が省略できるようになっている。  
   →有効にする方法  
+  
+device:
+  ユーザーログイン、パスワードを忘れの再設定、アカウントロックなどの認証系アプリに必要な機能を簡単に追加できる。
 ```
       class ProjectsController < InheritedResources::Base  
       end  
