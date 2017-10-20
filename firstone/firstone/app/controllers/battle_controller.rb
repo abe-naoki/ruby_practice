@@ -1,22 +1,27 @@
 class BattleController < ApplicationController
   def index
-    @status = Battle.all
+    @battle = Battle.all
+    if @battle.empty?
+      @battle = Battle.new(status: :attack)  
+    end
   end
 
   def update
+    @battle = Battle.new(battle_params)
     respond_to do |format|
-      if @status.update(status_params)
-        format.html { redirect_to @status, notice: 'User was successfully updated.' }
-        format.json { render :show, status: :OK, location:@status }
+      if @battle.update(status_params)
+        format.html { redirect_to @battle, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :OK, location:@battle }
       else
         format.html { render :edit }
-        format.json { render json: @status.errors, status: :unprocessable_entity }
+        format.json { render json: @battle.errors, status: :unprocessable_entity }
       end
+      p '☆☆☆☆'
     end
   end
 
   private
-    def status_params
-      params.require(:status).permit(:status)
+    def battle_params
+      params.require(:battle).permit(:status)
     end
 end
