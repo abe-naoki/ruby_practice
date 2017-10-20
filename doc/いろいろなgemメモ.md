@@ -1,17 +1,17 @@
 # いろいろなgemメモ
 
-## devise
+## ■devise
   ユーザ登録、ログイン、パスワード再設定、アカウントロックなど
   認証系アプリに必要な機能を簡単に追加できるgem。
 ```
   gem 'devise'
 ```
   
-## 【参考サイトURL】
+### 【参考サイトURL】
   https://qiita.com/cigalecigales/items/73d7bd7ec59a001ccd74
   https://qiita.com/Salinger/items/873e3c667462746ae707
 
-## pundit
+## ■pundit
 Punditというgemを使ってRailsに認可の仕組みを作る。
 リソースに対して誰が許可されるのかを定義します。
 cancancanがコントローラ寄りに対して、Punditはモデル寄りの責務。
@@ -37,11 +37,11 @@ Punditは、コントローラの各アクションで「Authorize リソースオブジェクト」を呼ぶと
  authorize @article
 ```
 
-## 【参考サイトURL】
+### 【参考サイトURL】
 https://qiita.com/zaru/items/8bf7b41b33f3f55bd27d
 http://llcc.hatenablog.com/entry/2016/01/05/233721
 
-## ransack
+## ■ransack
 Railsアプリで検索機能を実装する。
 
 searchの書き方
@@ -55,11 +55,11 @@ Item.seerch(:name_cont => 'ほげ').result.to_sql
 ### 組み合わせ
 複数の属性を組み合わせる場合は、andまたはorで繋ぐ。
 
-## 【参考サイトURL】
+### 【参考サイトURL】
 https://qiita.com/nysalor/items/9a95d91f2b97a08b96b0
 https://qiita.com/nishina555/items/2c1f8bae980e426519bc
 
-## slim
+## ■slim
 拡張子は".slim"
 RubyのテンプレートエンジンでHTMLタグを短く書くことができる。
 
@@ -74,6 +74,6 @@ RubyのテンプレートエンジンでHTMLタグを短く書くことができる。
  3.テキストと｜（パイプ）の扱い
  4.コメント
  
-## 【参考サイトURL】
+### 【参考サイトURL】
 https://qiita.com/yterajima/items/53fd0387279510ff082a
 https://qiita.com/pugiemonn/items/b64171952d958dc4d6be
